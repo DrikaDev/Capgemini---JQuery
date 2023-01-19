@@ -1,0 +1,32 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <!-- importar a biblioteca jquery -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <h1 class="exibir">Exibir</h1>
+    <h1 class="ocultar">Ocultar</h1>
+    <hr>
+    <h1 class="mensagem">Olá Mundo!</h1>
+
+    <script>
+
+        $(document).ready(function(){
+            //ocultar
+            $('.ocultar').click(function(){
+                $('.mensagem').slideUp(2000);
+            });
+            //exibir
+            $('.exibir').click(function(){
+                $('.mensagem').slideDown(2000);
+            });
+        });
+    </script>
+</body>
+</html>

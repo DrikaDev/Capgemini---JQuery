@@ -1,0 +1,28 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <!-- importar a biblioteca jquery -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <h1></h1>
+    <button>Clique aqui:</button>
+
+    <script>
+
+        $(document).ready(function(){
+            //adicionar um evento de click:
+            $('button').click(function(){
+                //colocar a função aqui dentro de disparador do evento
+                //adicionar um texto no h1:
+                $('h1').html('Você clicou no botão.')
+            });
+        });
+    </script>
+</body>
+</html>

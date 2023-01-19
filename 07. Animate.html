@@ -1,0 +1,37 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <!-- importar a biblioteca jquery -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    
+    <!-- neste exercício o css vai ficar aqui mesmo: -->
+    <style>
+        div{
+            width: 100px;
+            height: 80px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <button>Clique aqui para ver o efeito acontecer</button>
+    <div></div>
+
+    <script>
+        //colocar o efeito de animação aqui:
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('div').animate({
+                    //colocar os comandos CSS que serão alterados no animate aqui:
+                    width: '400px',
+                    height: '200px'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

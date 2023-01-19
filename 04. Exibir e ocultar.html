@@ -1,0 +1,34 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir e ocultar</title>
+    <!-- importar a biblioteca jquery -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <br>
+    <img src="./logo_proway.png" alt="">
+
+    <script>
+
+        $(document).ready(function(){
+
+            //exibir:
+            $('#exibir').click(function(){
+                $('img').show();
+            });
+
+            //ocultar:
+            $('#ocultar').click(function(){
+                $('img').hide();
+            });
+        });
+    </script>
+</body>
+</html>
